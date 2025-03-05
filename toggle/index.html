@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+body{
+    background: #3A1866;
+}
+button {
+  all: unset;
+  width: 80px;
+  height: 24px;
+  background: linear-gradient(to right, #6d27c4, #ca4af9);
+  border-radius: 5rem;
+  box-shadow: 2px 3px 1px rgba(0, 0, 0, 0.429);
+  cursor: pointer;
+  position: relative;
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 17px;
+  height: 17px;
+
+  background: white;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.429);
+
+  border-radius: 50%;
+  transform: translateX(0);
+  transition: 0.2s ease-in;
+}
+button.toggle::after {
+  transform: translateX(56px);
+}
+    </style>
+  </head>
+<body>
+  <button></button>
+
+  <script>
+      const btn= document.querySelector("button")
+
+      btn.addEventListener("click", () => {
+          btn.classList.toggle("toggle")
+      })
+  </script>
+</body>
+</html>

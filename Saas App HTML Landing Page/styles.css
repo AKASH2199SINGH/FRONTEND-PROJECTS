@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+section, header{
+    background: #5f4ded;
+}
+
+header nav{
+    height: 15vh;
+    width: 80%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+header ul{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+
+    padding: .7rem 1.5rem;
+    border-radius: 5rem;
+
+    transition: .1s ease-in-out;
+}
+
+header a:hover{
+    background-color: white;
+    color: #5f4ded;
+}
+
+section img{
+    width: 300px;
+}
+
+.s-container{
+    width: 80%;
+    margin: auto;
+    height: 90vh;
+
+    padding-bottom: 10rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    position: relative;
+    z-index: 3;
+}
+
+.container h1{
+    font-size: 50px;
+    line-height: 70px;
+
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.container p{
+    color: #eee;
+    width: 70% ;
+}
+
+section img{
+    width: 700px;
+    min-width: 300px;
+}
+
+section button{
+    all: unset;
+    cursor: pointer;
+
+    background: white ;
+    color: #5f4ded;
+
+    margin: 0 auto;
+
+    padding: 1rem 2rem;
+    font-weight: 700;
+
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+    transition: .1s ease-in-out;
+}
+
+section button:hover{
+    transform: scale(1.1);
+}
+
+section{
+    position: relative;
+}
+
+svg{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+}
